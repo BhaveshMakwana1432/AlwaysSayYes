@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #eee2de;
+        background-image: url(https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+      }
+      .container {
+        text-align: center;
+        margin-top: 10%;
+      }
+      h1 {
+        font-size: 5rem;
+        font-family: "Great Vibes", cursive;
+        color: #fff7f1;
+        text-shadow: 1px 1px 5px black;
+      }
+      button {
+        position: relative;
+      }
+
+      /* CSS */
+      .button-33 {
+        size: 10rem;
+        font-size: 2rem;
+        margin: 10px 8px;
+        background-color: #fff7f1;
+        border-radius: 100px;
+        box-shadow: 1px 1px 2px black;
+        color: #bf515f;
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+          sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 1rem;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-33:hover {
+        box-shadow: 1px 1px 10px rgb(26, 26, 26);
+        transform: scale(1.05) rotate(-1deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Do you love me</h1>
+      <div class="button-group">
+        <a href="./meto.html"
+          ><button class="button-33" id="yes">Yes</button></a
+        >
+        <button class="button-33" id="no">No</button>
+      </div>
+    </div>
+    <script>
+      const b1 = document.getElementById("no");
+      b1.addEventListener("mouseover", () => {
+        let i = Math.floor(Math.random() * 500 + 1);
+        let j = Math.floor(Math.random() * 200 + 1);
+        b1.style.left = i + "px";
+        b1.style.top = j + "px";
+      });
+    </script>
+  </body>
+</html>
